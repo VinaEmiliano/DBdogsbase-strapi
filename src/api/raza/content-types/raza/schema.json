@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "razas",
+  "info": {
+    "singularName": "raza",
+    "pluralName": "razas",
+    "displayName": "Razas"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "razaimg": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "razadescripcion": {
+      "type": "richtext",
+      "required": true
+    },
+    "razaurl": {
+      "type": "uid",
+      "targetField": "nombre",
+      "required": true
+    }
+  }
+}
